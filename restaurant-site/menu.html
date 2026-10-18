@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | La Dispensa – Italian Deli &amp; Kitchen, London SE1</title>
+  <meta name="description" content="Full menu: antipasti, fresh homemade pasta, main courses, sandwiches, salads, charcuterie platters, desserts, coffee, wines and liquors.">
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#menu">Skip to menu</a>
+
+  <header class="site-header solid">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="La Dispensa home">La Dispensa<span>.</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#visit">Find Us</a>
+        <a href="index.html#reserve" class="btn btn-primary">Book a Table</a>
+      </nav>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" style="color:var(--gold)">Il Menù</p>
+      <h1>Our Menu</h1>
+      <p>Fresh pasta, Italian charcuterie and cheese, proper coffee and a great wine list. Pick a category below or search the whole menu.</p>
+    </div>
+  </section>
+
+  <div class="menu-tools">
+    <div class="container">
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Search dishes, e.g. “truffle”, “cheese”, “prawns”…" aria-label="Search the menu">
+        <label class="toggle"><input type="checkbox" id="veg-only"> <span class="veg">V</span> Vegetarian only</label>
+      </div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Menu categories"></div>
+    </div>
+  </div>
+
+  <main class="menu-body" id="menu">
+    <div class="container">
+      <div class="menu-head" id="menu-head"></div>
+      <div class="menu-list" id="menu-list" aria-live="polite"></div>
+      <div class="allergen"><strong>Allergies &amp; dietary needs:</strong> please speak to a member of staff before ordering if you have a food allergy or intolerance. <span class="veg">V</span> = vegetarian. Dishes may contain nuts, gluten, dairy, eggs, fish or shellfish. Call us on <a href="tel:+442074037513"><strong>+44 20 7403 7513</strong></a>.</div>
+      <p class="center" style="margin-top:40px"><a href="index.html#reserve" class="btn btn-primary">Reserve a Table</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div><h4>La Dispensa</h4><p>Artisan Italian cooking ingredients, cheese and charcuterie in store, serving coffee and sandwiches.</p></div>
+        <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="index.html#reserve">Reservations</a></li><li><a href="index.html#visit">Find Us</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li>218 Long Ln, London SE1 4QB</li><li><a href="tel:+442074037513">+44 20 7403 7513</a></li></ul></div>
+      </div>
+      <div class="copy"><span>© <span id="year"></span> La Dispensa. All rights reserved.</span><span>Please inform your server of any allergies.</span></div>
+    </div>
+  </footer>
+
+  <a class="fab" href="tel:+442074037513" aria-label="Call the restaurant">📞</a>
+  <div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice"><span>We use only essential cookies to make this site work.</span><button class="btn btn-primary" id="cookie-ok" style="padding:10px 20px">OK</button></div>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
