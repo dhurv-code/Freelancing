@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holt's Bakery Inc | Custom Cakes & Cupcakes in Fitzgerald, GA</title>
+<meta name="description" content="Custom celebration cakes, cupcakes and sheet cakes in Fitzgerald, Georgia. Design your cake online and call to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="#top">Holt's <span>Bakery</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">Menu</button>
+  <nav id="links">
+    <a href="#builder">Design a cake</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+    <a class="btn small" href="tel:+12294234551">Call 229-423-4551</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="badge">★ 4.7 from 196 Google reviews</p>
+    <h1>Every celebration deserves its own cake.</h1>
+    <p class="lead">Birthdays, graduations, game days and just-because. Holt's Bakery decorates each cake by hand in Fitzgerald, Georgia.</p>
+    <div class="cta">
+      <a class="btn" href="#builder">Design your cake</a>
+      <a class="btn ghost" href="#gallery">See our work</a>
+    </div>
+    <p class="note" id="openNote">Closes 5:15 pm today · Takeaway, dine-in and delivery</p>
+  </div>
+  <div class="hero-stack" id="stack" aria-label="Cake photos, tap to shuffle">
+    <img src="images/graduation.jpg" alt="Graduation cake with sunflowers">
+    <img src="images/minnie.jpg" alt="Minnie Mouse first birthday cake">
+    <img src="images/floral.jpg" alt="Two tier cake with sugar flowers">
+    <span class="hint">Tap to shuffle</span>
+  </div>
+</section>
+
+<section class="marquee" aria-hidden="true"><div><span>Birthday cakes</span><span>Graduation</span><span>Cupcakes</span><span>Sheet cakes</span><span>Wedding tiers</span><span>Custom messages</span><span>Birthday cakes</span><span>Graduation</span><span>Cupcakes</span><span>Sheet cakes</span><span>Wedding tiers</span><span>Custom messages</span></div></section>
+
+<section class="sec" id="builder">
+  <div class="sec-head">
+    <h2>Design your cake</h2>
+    <p>Pick the details and watch the cake change. Then send us your idea and we'll confirm the price and pickup time.</p>
+  </div>
+  <div class="builder">
+    <div class="preview">
+      <div class="cake" id="cake">
+        <div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div>
+        <div class="topper" id="topper">★</div>
+        <div class="msg" id="msg">Happy Birthday</div>
+      </div>
+      <div class="plate"></div>
+      <p class="est">Estimated from <strong id="price">$35</strong><small> · final price confirmed by the bakery</small></p>
+    </div>
+    <form class="controls" id="designForm">
+      <fieldset><legend>Cake type</legend>
+        <label class="chip"><input type="radio" name="size" value="quarter" data-p="30" checked><span>Round cake</span></label>
+        <label class="chip"><input type="radio" name="size" value="sheet" data-p="40"><span>Sheet cake</span></label>
+        <label class="chip"><input type="radio" name="size" value="tier" data-p="60"><span>Two tier</span></label>
+        <label class="chip"><input type="radio" name="size" value="cup" data-p="18"><span>Cupcakes (6)</span></label>
+      </fieldset>
+      <fieldset><legend>Frosting colour</legend>
+        <div class="swatches" id="swatches">
+          <button type="button" class="sw on" style="--c:#f7b8c8" data-c="#f7b8c8" aria-label="Pink"></button>
+          <button type="button" class="sw" style="--c:#ffd44d" data-c="#ffd44d" aria-label="Sunflower"></button>
+          <button type="button" class="sw" style="--c:#8cc6ff" data-c="#8cc6ff" aria-label="Sky blue"></button>
+          <button type="button" class="sw" style="--c:#c9a7f0" data-c="#c9a7f0" aria-label="Lilac"></button>
+          <button type="button" class="sw" style="--c:#fff6ea" data-c="#fff6ea" aria-label="Vanilla"></button>
+          <button type="button" class="sw" style="--c:#6b3f2a" data-c="#6b3f2a" aria-label="Chocolate"></button>
+        </div>
+      </fieldset>
+      <fieldset><legend>Flavour</legend>
+        <select id="flavor"><option>Vanilla</option><option>Chocolate</option><option>Marble</option><option>Strawberry</option><option>Red velvet</option></select>
+      </fieldset>
+      <fieldset><legend>Occasion</legend>
+        <select id="occasion"><option data-t="🎂" data-m="Happy Birthday">Birthday</option><option data-t="🎓" data-m="Congrats Grad">Graduation</option><option data-t="🏈" data-m="Go Team!">Game day</option><option data-t="💍" data-m="Just Married">Wedding</option><option data-t="🎉" data-m="Congratulations">Other</option></select>
+      </fieldset>
+      <fieldset><legend>Message on the cake</legend>
+        <input type="text" id="text" maxlength="28" placeholder="Type a name or message">
+      </fieldset>
+      <fieldset><legend>Your name and phone</legend>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="tel" id="phone" placeholder="Phone number" required>
+      </fieldset>
+      <button class="btn full" type="submit">Send my cake idea</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec alt" id="gallery">
+  <div class="sec-head">
+    <h2>Made in our kitchen</h2>
+    <p>A few recent favourites. Tap any photo to look closer.</p>
+  </div>
+  <div class="filters" id="filters">
+    <button class="on" data-f="all">All</button><button data-f="cake">Cakes</button><button data-f="cup">Cupcakes</button><button data-f="sheet">Sheet cakes</button>
+  </div>
+  <div class="grid" id="grid">
+    <figure data-k="cake"><img src="images/graduation.jpg" alt="Graduation cake with sunflowers"><figcaption>Graduation cake with sunflowers</figcaption></figure>
+    <figure data-k="cake"><img src="images/minnie.jpg" alt="Minnie Mouse first birthday cake"><figcaption>Minnie Mouse 1st birthday</figcaption></figure>
+    <figure data-k="cup"><img src="images/cupcakes.jpg" alt="Superhero and Paw Patrol cupcakes"><figcaption>Superhero and Paw Patrol cupcakes</figcaption></figure>
+    <figure data-k="sheet"><img src="images/football.jpg" alt="Football field sheet cake"><figcaption>Football field sheet cake</figcaption></figure>
+    <figure data-k="cake"><img src="images/floral.jpg" alt="Two tier cake with sugar flowers"><figcaption>Two tier cake with sugar flowers</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="visit">
+  <div class="visit">
+    <div>
+      <h2>Come say hi</h2>
+      <address>614 S Grant St<br>Fitzgerald, GA 31750</address>
+      <p><a class="tel" href="tel:+12294234***">229-423-4551</a></p>
+      <ul class="facts">
+        <li>Takeaway, dine-in and delivery</li>
+        <li>Free parking lot</li>
+        <li>Wheelchair-accessible entrance and car park</li>
+        <li>Credit and debit cards accepted</li>
+        <li>Most items between $1 and $40</li>
+      </ul>
+      <div class="cta">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Holt%27s+Bakery+Inc+614+S+Grant+St+Fitzgerald+GA">Get directions</a>
+        <a class="btn ghost" href="tel:+12294234***">Call now</a>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="big">4.7</div>
+      <div class="stars" aria-label="4.7 out of 5">★★★★★</div>
+      <p>196 Google reviews</p>
+      <p class="q">Order early for custom designs. Ask us about your date.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p>© <span id="yr"></span> Holt's Bakery Inc · 614 S Grant St, Fitzgerald, GA</p><p class="demo">Demo website concept</p></footer>
+<a class="fab" href="tel:+1229423****" aria-label="Call Holt's Bakery">Call</a>
+
+<div class="lightbox" id="lb" hidden><button id="lbClose" aria-label="Close">×</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
