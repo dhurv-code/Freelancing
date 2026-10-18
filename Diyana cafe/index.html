@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diyana's Bakery Inc | Custom Cakes in St.Albans, UK</title>
+<meta name="description" content="Handcrafted celebration cakes, cupcakes and sheet cakes in Fitzgerald, Georgia.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="hdr" id="hdr">
+  <nav class="l"><a href="#about">About us</a><a href="#gallery">Gallery</a><a href="#builder">Design a cake</a></nav>
+  <a class="logo" href="#top">Diyana's<large>Bakery</large></a>
+  <nav class="r"><a href="#occasions">Occasions</a><a href="#menu">Menu</a><a class="ph" href="tel:+447395291034">+447395291034</a></nav>
+  <button class="bg" id="bg" aria-expanded="false">Menu</button>
+</header>
+<div class="drawer" id="drawer"><a href="#about">About us</a><a href="#menu">Menu</a><a href="#builder">Design a cake</a><a href="#gallery">Gallery</a><a href="#occasions">Occasions</a><a href="#visit">Visit</a><a href="tel:+447395291034">Call 229-423-4551</a></div>
+
+<main id="top">
+<section class="hero">
+  <div class="glow" id="glow"></div>
+  <div class="hero-in">
+    <a class="btn" href="tel:+447395291034">Order now</a>
+    <h1 id="h1"><span>A sweet</span> <span>escape in</span> <span>St. Albans</span></h1>
+    <p>Where every celebration becomes a cake. Hand-decorated birthday, graduation and game-day cakes from a Georgia kitchen guests have rated 4.7 stars.</p>
+    <a class="scroll" href="#about">scroll</a>
+  </div>
+  <div class="cols" aria-hidden="true">
+    <div class="col up"><img src="images/minnie.jpg" alt=""><img src="images/floral.jpg" alt=""><img src="images/football.jpg" alt=""><img src="images/minnie.jpg" alt=""><img src="images/floral.jpg" alt=""><img src="images/football.jpg" alt=""></div>
+    <div class="col down"><img src="images/graduation.jpg" alt=""><img src="images/cupcakes.jpg" alt=""><img src="images/minnie.jpg" alt=""><img src="images/graduation.jpg" alt=""><img src="images/cupcakes.jpg" alt=""><img src="images/minnie.jpg" alt=""></div>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <p class="quote">Every cake is a celebration of flavour, artistry and care, decorated by hand and made for the moment you are planning.</p>
+  <div class="stats">
+    <div><b data-n="5.0">0</b><span>Google rating</span></div>
+    <div><b data-n="100+">0</b><span>Reviews</span></div>
+    <div><b>$1–40</b><span>Most items</span></div>
+  </div>
+  <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Holt%27s+Bakery+Inc+Fitzgerald+GA">Read our reviews</a>
+</section>
+
+<section class="sec menu" id="menu">
+  <div class="mh"><p class="eye">A sweet experience</p><h2>Our menu</h2><p>Browse what we bake and decorate. Hover a name to see a sample, then call us to plan yours.</p></div>
+  <ul class="mlist" id="mlist">
+    <li data-img="images/minnie.jpg">Birthday cakes<img class="th" src="images/minnie.jpg" alt=""></li>
+    <li data-img="images/graduation.jpg">Graduation cakes<img class="th" src="images/graduation.jpg" alt=""></li>
+    <li data-img="images/cupcakes.jpg">Cupcakes<img class="th" src="images/cupcakes.jpg" alt=""></li>
+    <li data-img="images/football.jpg">Sheet cakes<img class="th" src="images/football.jpg" alt=""></li>
+    <li data-img="images/floral.jpg">Tiered and floral<img class="th" src="images/floral.jpg" alt=""></li>
+    <li data-img="images/graduation.jpg">Custom messages<img class="th" src="images/graduation.jpg" alt=""></li>
+  </ul>
+  <a class="btn" href="tel:+447395291034">Call to order</a>
+  <img class="follow" id="follow" alt="">
+</section>
+
+<section class="sec builder" id="builder">
+  <div class="mh"><p class="eye">Make it yours</p><h2>Design your cake</h2><p>Choose the details and watch the cake change. Send us your idea and we will confirm the price and pickup time.</p></div>
+  <div class="bgrid">
+    <div class="preview">
+      <div class="cake" id="cake" data-s="quarter"><div class="tier t1"></div><div class="tier t2"></div><div class="topper" id="topper">🎂</div><div class="msg" id="msg">Happy Birthday</div></div>
+      <div class="plate"></div>
+      <p class="est">Estimated from <strong id="price">$30</strong><small>Final price confirmed by the bakery</small></p>
+    </div>
+    <form class="controls" id="designForm">
+      <fieldset><legend>Cake type</legend>
+        <label class="chip"><input type="radio" name="size" value="quarter" checked><span>Round cake</span></label>
+        <label class="chip"><input type="radio" name="size" value="sheet"><span>Sheet cake</span></label>
+        <label class="chip"><input type="radio" name="size" value="tier"><span>Two tier</span></label>
+        <label class="chip"><input type="radio" name="size" value="cup"><span>Cupcakes (6)</span></label></fieldset>
+      <fieldset><legend>Frosting colour</legend><div class="swatches">
+        <button type="button" class="sw on" style="--c:#f7b8c8" data-c="#f7b8c8" aria-label="Pink"></button>
+        <button type="button" class="sw" style="--c:#ffd44d" data-c="#ffd44d" aria-label="Sunflower"></button>
+        <button type="button" class="sw" style="--c:#8cc6ff" data-c="#8cc6ff" aria-label="Sky blue"></button>
+        <button type="button" class="sw" style="--c:#c9a7f0" data-c="#c9a7f0" aria-label="Lilac"></button>
+        <button type="button" class="sw" style="--c:#fff6ea" data-c="#fff6ea" aria-label="Vanilla"></button>
+        <button type="button" class="sw" style="--c:#6b3f2a" data-c="#6b3f2a" aria-label="Chocolate"></button></div></fieldset>
+      <fieldset><legend>Flavour</legend><select id="flavor"><option>Vanilla</option><option>Chocolate</option><option>Marble</option><option>Strawberry</option><option>Red velvet</option></select></fieldset>
+      <fieldset><legend>Occasion</legend><select id="occasion"><option data-t="🎂" data-m="Happy Birthday">Birthday</option><option data-t="🎓" data-m="Congrats Grad">Graduation</option><option data-t="🏈" data-m="Go Team!">Game day</option><option data-t="💍" data-m="Just Married">Wedding</option><option data-t="🎉" data-m="Congratulations">Other</option></select></fieldset>
+      <fieldset><legend>Message on the cake</legend><input type="text" id="text" maxlength="28" placeholder="Type a name or message"></fieldset>
+      <fieldset><legend>Your details</legend><input type="text" id="name" placeholder="Name" required><input type="tel" id="phone" placeholder="Phone number" required></fieldset>
+      <button class="btn full" type="submit">Send my cake idea</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec gal" id="gallery">
+  <div class="mh"><p class="eye">Our gallery</p><h2>A feast for the senses</h2><p>Recent work from our kitchen. Tap any photo to look closer.</p></div>
+  <div class="mosaic" id="mosaic">
+    <figure class="a"><img src="images/graduation.jpg" alt="Graduation cake with sunflowers"><figcaption>Graduation cake with sunflowers</figcaption></figure>
+    <figure><img src="images/minnie.jpg" alt="Minnie Mouse first birthday cake"><figcaption>Minnie Mouse 1st birthday</figcaption></figure>
+    <figure><img src="images/cupcakes.jpg" alt="Superhero and Paw Patrol cupcakes"><figcaption>Superhero and Paw Patrol cupcakes</figcaption></figure>
+    <figure class="b"><img src="images/football.jpg" alt="Football field sheet cake"><figcaption>Football field sheet cake</figcaption></figure>
+    <figure><img src="images/floral.jpg" alt="Two tier cake with sugar flowers"><figcaption>Two tier cake with sugar flowers</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec occ" id="occasions">
+  <div class="mh"><p class="eye">Occasions</p><h2>Cakes for every milestone</h2></div>
+  <div class="cards">
+    <article><img src="images/minnie.jpg" alt=""><h3>Birthdays</h3><p>Favourite characters, colours and names, piped by hand.</p><a class="btn ghost" href="tel:+447395291034">Book now</a></article>
+    <article><img src="images/graduation.jpg" alt=""><h3>Graduations</h3><p>Caps, school colours and sunflowers for the big day.</p><a class="btn ghost" href="tel:+447395291034">Book now</a></article>
+    <article><img src="images/football.jpg" alt=""><h3>Game days</h3><p>Sheet cakes decorated like the field for the whole team.</p><a class="btn ghost" href="tel:+447395291034">Book now</a></article>
+  </div>
+</section>
+
+<section class="cta"><h2>Plan your cake with us</h2><div><a class="btn" href="tel:+447395291034">Call us (229) 423-45**1</a><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/place/St.Albans+Cakes+By+Diyana/@51.7631282,-0.3050992,9z/data=!4m10!1m2!2m1!1sCustom+cakes+in+st+albans!3m6!1s0x48763f38c42a75ef:0x2684fc6223992a3b!8m2!3d51.7631282!4d-0.3050992!15sChlDdXN0b20gY2FrZXMgaW4gc3QgYWxiYW5zkgEJY2FrZV9zaG9w4AEA!16s%2Fg%2F11m6s046xp?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D">Get directions</a></div></section>
+</main>
+
+<footer id="visit">
+  <div><h4>Open today</h4><p>Closes 5:00 pm</p><p>Takeaway, dine-in and delivery</p></div>
+  <div><h4>Address</h4><p>417 The Ridgeway, St Albans AL4 9TY<br>United Kingdom</p></div>
+  <div><h4>Good to know</h4><p>Free parking lot<br>Wheelchair-accessible entrance<br>Credit and debit cards</p></div>
+  <form class="news" id="news"><h4>Join our newsletter</h4><input type="email" id="em" placeholder="Your email" required><button class="btn">Subscribe</button></form>
+  <p class="copy">© <span id="yr"></span> Diyana's Bakery Inc · Demo website concept</p>
+</footer>
+<a class="fab" href="tel:+447395291034" aria-label="Call Diyana's Bakery">Call</a>
+<div class="lb" id="lb" hidden><button id="lbc" aria-label="Close">×</button><img id="lbi" alt=""><p id="lbp"></p></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>
