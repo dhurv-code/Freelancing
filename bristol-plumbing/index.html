@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bristol Plumbing Co.</title>
+<meta name="description" content="Plumbing, water pumps, motors and heat pumps in Bristol. Call 07972 176630 or book a visit online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Bristol Plumbing Co.","telephone":"+447972176630","address":{"@type":"PostalAddress","streetAddress":"114 Jacob St","addressLocality":"Bristol","postalCode":"BS2 0AF","addressCountry":"GB"}}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top" aria-label="Bristol Plumbing Co. home">
+      <svg viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="11" fill="var(--copper-bright)"/><path d="M19 7c4.6 6.2 8 9.4 8 14a8 8 0 0 1-16 0c0-4.6 3.4-7.8 8-14z" fill="var(--deep)"/><path d="M15 22a4 4 0 0 0 4 4" stroke="var(--copper-bright)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>Bristol Plumbing Co.</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#book">Book a visit</a>
+    </nav>
+    <a class="btn btn--call ping" href="tel:+447972176630" aria-label="Call Bristol Plumbing Co. on 07972 176630">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      <span class="lbl-long">Call 07972 176630</span><span class="lbl-short">Call now</span>
+      <i class="rips" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main>
+<section class="hero band-deep" id="top">
+  <canvas id="bubbles" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="eyebrow">Plumbing &amp; heating · Bristol BS2</span>
+      <h1>Water where it <span class="wavy">belongs.</span></h1>
+      <p class="lead">Plumbers for Bristol homes and businesses. Water pumps, motors, heat pumps, and every leak, drip and blocked pipe in between.</p>
+      <div class="cta-row">
+        <a class="btn btn--call btn--big" href="tel:+447972176630">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          Call now<i class="rips" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn--ghost btn--big" href="#book">Book a visit<i class="rips" aria-hidden="true"></i></a>
+      </div>
+      <div class="numline"><span id="heroNum">07972 176630</span><button type="button" data-copy-el="heroNum">Copy number</button></div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>114 Jacob St, Bristol BS2 0AF</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open · Closes 6 pm</li>
+      </ul>
+    </div>
+
+    <aside class="gauge-card" aria-label="Example boiler pressure gauge reading 1.4 bar">
+      <span class="eyebrow">Pressure check</span>
+      <svg viewBox="0 0 240 240" role="img" aria-label="Pressure gauge from 0 to 4 bar, needle at 1.4 bar">
+        <circle cx="120" cy="120" r="112" fill="var(--deep)" stroke="var(--deep-line)" stroke-width="2"/>
+        <g id="gaugeFace"></g>
+        <g class="needle" id="needle"><g class="wobble">
+          <path d="M120 40 L125 120 L115 120 Z" fill="var(--copper-bright)"/>
+          <circle cx="120" cy="120" r="9" fill="var(--copper-bright)"/><circle cx="120" cy="120" r="3.5" fill="var(--deep)"/>
+        </g></g>
+        <text x="120" y="176" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" fill="var(--on-deep)" style="font-variant-numeric:tabular-nums">1.4 bar</text>
+        <text x="120" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1.5" fill="var(--on-deep-muted)">COLD SYSTEM · HEALTHY</text>
+      </svg>
+      <p>Most sealed heating systems sit around 1 to 1.5 bar when cold. If yours keeps dropping, water is going somewhere. We find where.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="wave" style="--from:var(--deep);--to:var(--bg)" aria-hidden="true">
+  <svg class="w2" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 Q150,6 300,30 T600,30 T900,30 T1200,30 V60 H0 Z"/></svg>
+  <svg class="w1" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,38 Q150,14 300,38 T600,38 T900,38 T1200,38 V60 H0 Z"/></svg>
+</div>
+
+<section class="promise" aria-label="What you can expect">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><b>Price before we start</b><span>No surprises on the invoice.</span></li>
+      <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><b>Tidy work</b><span>Floors covered, mess taken away.</span></li>
+      <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><b>Plain English</b><span>We explain the fault and your options.</span></li>
+      <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><b>Based in Bristol</b><span>Jacob St, BS2. Local, not a call centre.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Services</span>
+      <h2>Pumps, motors, heating and every pipe in between</h2>
+      <p>From a weak shower to a full heat pump install, tell us what the water is doing and we will take it from there.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="24" r="12"/><path d="M20 12V6h14M8 24H3M20 17v14M13 24h14"/></svg>
+        <span class="tag">Sized by L/min</span>
+        <h3>Water pumps</h3>
+        <p>Shower, booster and mains pressure pumps supplied, fitted and repaired. Fix weak showers and slow-filling taps.</p>
+        <a href="#book" data-service="Water pump">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="14" width="24" height="18" rx="4"/><path d="M30 19h7v8h-7M12 14V8M18 14V8M24 14V8M12 23h12"/></svg>
+        <span class="tag">230 V circulators</span>
+        <h3>Motors &amp; circulator pumps</h3>
+        <p>Noisy, seized or dead pump motors diagnosed and replaced like for like, so your heating and hot water keep moving.</p>
+        <a href="#book" data-service="Motor or circulator pump">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="34" height="30" rx="5"/><circle cx="22" cy="22" r="2"/><path d="M22 22c0-6 3-9 8-9M22 22c6 0 9 3 9 8M22 22c0 6-3 9-8 9M22 22c-6 0-9-3-9-8"/></svg>
+        <span class="tag">Flow 35–50 °C</span>
+        <h3>Heat pumps</h3>
+        <p>Air source heat pump surveys, installation and servicing, with honest advice on whether your home suits one.</p>
+        <a href="#book" data-service="Heat pump">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 5c2 8 11 11 11 22a11 11 0 0 1-22 0c0-5 3-7 5-11 2 3 3 3 3 5 2-4 3-8 3-16z"/></svg>
+        <span class="tag">Heating &amp; hot water</span>
+        <h3>Boilers &amp; central heating</h3>
+        <p>Repairs, servicing, pressure faults and no-heating call-outs. Gas work is carried out by Gas Safe registered engineers.</p>
+        <a href="#book" data-service="Boiler or heating">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 5c7 9 11 14 11 20a11 11 0 0 1-22 0c0-6 4-11 11-20z"/><path d="M16 27a6 6 0 0 0 6 6"/></svg>
+        <span class="tag">Burst &amp; leak repair</span>
+        <h3>Leaks &amp; emergencies</h3>
+        <p>Burst pipes, leaking joints, damp patches and dripping ceilings traced and stopped, then repaired properly.</p>
+        <a href="#book" data-service="Leak or burst pipe">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 38V16a9 9 0 0 1 9-9h8"/><path d="M20 17h20a10 10 0 0 0-20 0z"/><path d="M24 24v3M30 24v6M36 24v3"/></svg>
+        <span class="tag">Taps · showers · suites</span>
+        <h3>Bathrooms &amp; showers</h3>
+        <p>New taps, toilets, basins and showers fitted neatly, plus repairs to the ones you already have.</p>
+        <a href="#book" data-service="Bathroom or shower">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h20a10 10 0 0 1 10 10v17M4 22h12a3 3 0 0 1 3 3v14"/></svg>
+        <span class="tag">Drains · toilets · sinks</span>
+        <h3>Blocked drains &amp; toilets</h3>
+        <p>Slow sinks, blocked toilets and gurgling drains cleared, with advice on stopping them coming back.</p>
+        <a href="#book" data-service="Blocked drain or toilet">Book this <span>→</span></a>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="32" height="22" rx="3"/><path d="M15 10v22M22 10v22M29 10v22M10 32v5M34 32v5"/></svg>
+        <span class="tag">Cold spots · sludge</span>
+        <h3>Radiators &amp; powerflush</h3>
+        <p>Radiator replacement, new valves, bleeding and powerflushing to clear sludge and even out the heat.</p>
+        <a href="#book" data-service="Radiators and powerflush">Book this <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="--from:var(--bg);--to:var(--deep)" aria-hidden="true">
+  <svg class="w2" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 Q150,6 300,30 T600,30 T900,30 T1200,30 V60 H0 Z"/></svg>
+  <svg class="w1" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,38 Q150,14 300,38 T600,38 T900,38 T1200,38 V60 H0 Z"/></svg>
+</div>
+
+<section class="sec band-deep" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">How a visit works</span>
+      <h2>From first call to water running right</h2>
+      <p>Four stops, nothing hidden. You know what is wrong and what it costs before we pick up a spanner.</p>
+    </div>
+    <ol class="steps">
+      <li class="step rv"><span class="node">1</span><h3>Call or book</h3><p>Phone us or send the form. Tell us what the water is doing and your postcode.</p></li>
+      <li class="step rv"><span class="node">2</span><h3>We find it and quote</h3><p>We trace the cause, explain it plainly and give you a price before any work starts.</p></li>
+      <li class="step rv"><span class="node">3</span><h3>We fix it</h3><p>Repair, replacement or install, with floors covered and the mess taken away.</p></li>
+      <li class="step rv"><span class="node">4</span><h3>Final check</h3><p>We test pressure and flow, show you what changed and tell you what to watch for.<br><span class="tag">Pressure · flow · temperature</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wave" style="--from:var(--deep);--to:var(--bg)" aria-hidden="true">
+  <svg class="w2" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 Q150,6 300,30 T600,30 T900,30 T1200,30 V60 H0 Z"/></svg>
+  <svg class="w1" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,38 Q150,14 300,38 T600,38 T900,38 T1200,38 V60 H0 Z"/></svg>
+</div>
+
+<section class="sec" id="emergency" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="emerg rv">
+      <div class="emerg-main">
+        <div class="sec-head" style="margin:0">
+          <span class="eyebrow">While you wait for us</span>
+          <h2>Burst pipe? Do this first.</h2>
+        </div>
+        <ol>
+          <li><div><b>Turn off the stopcock</b><span>Usually under the kitchen sink or where the mains pipe enters the house. Turn it clockwise until it stops.</span></div></li>
+          <li><div><b>Keep water and electrics apart</b><span>If water is near sockets or the fuse board, switch off at the consumer unit. Do not touch wet appliances.</span></div></li>
+          <li><div><b>Switch off heating, then drain</b><span>Turn off the boiler and immersion heater, then open the cold taps to empty the pipes.</span></div></li>
+          <li><div><b>Contain it and take photos</b><span>Catch drips, move belongings, and photograph the damage for your insurer. Then call us.</span></div></li>
+        </ol>
+      </div>
+      <div class="emerg-side">
+        <span class="eyebrow">Then call us</span>
+        <div class="bignum">07972 176630</div>
+        <p>Tell us where the water is coming from and whether you have shut the stopcock.</p>
+        <a class="btn btn--call" href="tel:+447972176630">Call now<i class="rips" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faqs">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="eyebrow">FAQs</span>
+      <h2>Straight answers about pumps, heating and leaks</h2>
+      <p>Cannot see your question? Phone us and we will talk it through.</p>
+      <div><a class="btn btn--line" href="tel:+447972176630">Call 07972 176630<i class="rips" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="faq-list rv">
+      <details open>
+        <summary>How fast can you get to a leak?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">Phone us first and tell us how bad it is. Active leaks and homes with no heating or hot water go to the front of the queue, and we will give you an arrival time on the call. While you wait, turn off the stopcock using the steps above.</div>
+      </details>
+      <details>
+        <summary>Do you quote before starting work?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">Yes. We find the cause, explain it, and give you a price before we start. If we uncover something new while working, we stop and talk to you before anything is added.</div>
+      </details>
+      <details>
+        <summary>My boiler pressure keeps dropping. Why?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">Most sealed heating systems sit around 1 to 1.5 bar when cold. If it falls below 1 bar again after topping up, water is escaping somewhere: a leaking radiator valve, a weeping pump seal, a faulty expansion vessel or a failing pressure relief valve. Topping up over and over hides the fault and adds fresh water that brings in scale and oxygen. Call us and we will trace it.</div>
+      </details>
+      <details>
+        <summary>Do I need a shower pump or a booster pump?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">A shower pump boosts a single shower on a tank-fed system. A booster set serves the whole house, usually when mains or stored water arrives too slowly. The right choice depends on your flow in litres per minute and your pipe size, so we measure before we recommend anything.</div>
+      </details>
+      <details>
+        <summary>Is a heat pump right for my home?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">It depends on your insulation, your radiators, and space for the outdoor unit and a hot water cylinder. Heat pumps run at lower flow temperatures, often 35 to 50 °C, so some homes need larger radiators or better insulation to stay comfortable. Grants such as the Boiler Upgrade Scheme may be available in England and Wales, and the rules change, so check gov.uk or ask us during a survey.</div>
+      </details>
+      <details>
+        <summary>My radiators are cold or my pump is noisy. What is wrong?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">A cold patch at the top of a radiator usually means trapped air, and bleeding it helps. Cold at the bottom points to sludge. A pump that hums, rattles or will not start is often a worn or seized motor. Many circulator pumps can be replaced like for like once the fault is confirmed.</div>
+      </details>
+      <details>
+        <summary>Does hard water affect my plumbing in Bristol?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">Bristol is a hard water area. Limescale builds up in taps, shower heads and kettles, and inside boilers and heat exchangers, which makes them work harder and fail sooner. A scale inhibitor, a softener or regular descaling can help. Ask us which suits your home.</div>
+      </details>
+      <details>
+        <summary>How do I check a gas engineer is registered?<i class="pm" aria-hidden="true"></i></summary>
+        <div class="ans">Anyone working on gas appliances in the UK must be on the Gas Safe Register. Ask to see their ID card and check the licence number at <a href="https://www.gassaferegister.co.uk" target="_blank" rel="noopener">gassaferegister.co.uk</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="--from:var(--bg);--to:var(--deep)" aria-hidden="true">
+  <svg class="w2" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 Q150,6 300,30 T600,30 T900,30 T1200,30 V60 H0 Z"/></svg>
+  <svg class="w1" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,38 Q150,14 300,38 T600,38 T900,38 T1200,38 V60 H0 Z"/></svg>
+</div>
+
+<section class="sec band-deep" id="book" style="padding-bottom:clamp(40px,6vw,64px)">
+  <div class="wrap book-grid">
+    <div class="book-copy rv">
+      <span class="eyebrow">Book a visit</span>
+      <h2>Tell us what is wrong and when suits you</h2>
+      <p>It takes about a minute. Pick a service, give us a postcode and a time window, and we will confirm by phone.</p>
+      <ul class="book-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><span>Price agreed before work begins</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><span>Morning and afternoon windows</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg><span>Pumps, motors, heat pumps and general plumbing</span></li>
+      </ul>
+      <div class="callbox">
+        <span class="eyebrow">Prefer to talk?</span>
+        <div class="bignum" id="bookNum">07972 176630</div>
+        <div class="cta-row" style="margin:0">
+          <a class="btn btn--call" href="tel:+447972176630">Call now<i class="rips" aria-hidden="true"></i></a>
+          <button type="button" class="btn btn--ghost" data-copy-el="bookNum">Copy number<i class="rips" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card rv">
+      <form id="bookForm" novalidate>
+        <div class="grid2">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name"><p class="err" id="e-name" hidden></p></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="07xxx xxxxxx" aria-describedby="e-phone"><p class="err" id="e-phone" hidden></p></div>
+          <div class="field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email"><p class="err" id="e-email" hidden></p></div>
+          <div class="field"><label for="f-postcode">Postcode</label><input id="f-postcode" name="postcode" type="text" autocomplete="postal-code" placeholder="BS2 0AF" aria-describedby="e-postcode"><p class="err" id="e-postcode" hidden></p></div>
+        </div>
+        <div class="field">
+          <label for="f-service">What do you need?</label>
+          <select id="f-service" name="service" aria-describedby="e-service">
+            <option value="">Choose a service</option>
+            <option>Water pump</option>
+            <option>Motor or circulator pump</option>
+            <option>Heat pump</option>
+            <option>Boiler or heating</option>
+            <option>Leak or burst pipe</option>
+            <option>Bathroom or shower</option>
+            <option>Blocked drain or toilet</option>
+            <option>Radiators and powerflush</option>
+            <option>Something else or not sure</option>
+          </select>
+          <p class="err" id="e-service" hidden></p>
+        </div>
+        <fieldset class="field">
+          <legend>How urgent is it?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="urgency" value="Emergency, water is escaping now"><span>Emergency</span></label>
+            <label class="chip"><input type="radio" name="urgency" value="This week" checked><span>This week</span></label>
+            <label class="chip"><input type="radio" name="urgency" value="Flexible"><span>Flexible</span></label>
+          </div>
+        </fieldset>
+        <p class="note" id="emNote" hidden>Burst pipe or water near electrics? Please call 07972 176630 instead of waiting on a form.</p>
+        <div class="grid2">
+          <div class="field"><label for="f-date">Preferred date <span class="opt">(optional)</span></label><input id="f-date" name="date" type="date" aria-describedby="e-date"><p class="err" id="e-date" hidden></p></div>
+          <div class="field"><label for="f-time">Time window</label>
+            <select id="f-time" name="time"><option>No preference</option><option>Morning</option><option>Afternoon (before 6 pm)</option></select>
+          </div>
+        </div>
+        <div class="field"><label for="f-notes">What is happening? <span class="opt">(optional)</span></label><textarea id="f-notes" name="notes" placeholder="For example: shower pump is noisy and the water goes cold."></textarea></div>
+        <button class="btn btn--call btn--big" type="submit">Prepare my booking request<i class="rips" aria-hidden="true"></i></button>
+        <p class="fine">Next you can send the request to us on WhatsApp, or copy it and call.</p>
+      </form>
+
+      <div class="sum" id="summary" hidden>
+        <h3>Your request is ready to send</h3>
+        <p class="fine" style="margin:0">Nothing has been sent yet. Choose how you would like to send it.</p>
+        <pre class="sum-pre" id="sumText"></pre>
+        <div class="sum-actions">
+          <a class="btn btn--call" id="waLink" href="https://wa.me/447972176630" target="_blank" rel="noopener">Send on WhatsApp<i class="rips" aria-hidden="true"></i></a>
+          <button type="button" class="btn btn--line" id="copySum">Copy details<i class="rips" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn--line" id="editReq">Edit request<i class="rips" aria-hidden="true"></i></button>
+        </div>
+        <p class="fine">Or call 07972 176630 and read it out. We are happy either way.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="wrap foot" style="margin-top:clamp(48px,7vw,84px)">
+    <div class="foot-grid">
+      <div>
+        <h3>Bristol Plumbing Co.</h3>
+        <p>114 Jacob St<br>Bristol BS2 0AF<br>United Kingdom</p>
+        <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=114+Jacob+St+Bristol+BS2+0AF" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <ul>
+          <li>Phone: <a href="tel:+447972176630">07972 176630</a></li>
+          <li>Open · Closes 6 pm</li>
+          <li><a href="#book">Book a visit online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li>Water pumps</li><li>Motors and circulators</li><li>Heat pumps</li><li>Boilers and heating</li><li>Leaks and general plumbing</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Bristol Plumbing Co. All rights reserved.</p>
+  </footer>
+</section>
+</main>
+
+<div class="callbar">
+  <a class="btn btn--call" href="tel:+447972176630">Call now<i class="rips" aria-hidden="true"></i></a>
+  <a class="btn btn--ghost" href="#book">Book a visit<i class="rips" aria-hidden="true"></i></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
